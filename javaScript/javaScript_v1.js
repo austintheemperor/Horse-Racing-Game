@@ -6,6 +6,7 @@ function bet(betAmount, horse) {
 
 }
 
-function horseWinner(horses) {
-    const randomItem = horses[Math.floor(Math.random() * horses.length)]
+function horseWinner() {
+    const randomHorse = horses[Math.floor(Math.random() * horses.length)]
+    alert(`The ${randomHorse} horse Wins`)
 }
