@@ -1,3 +1,16 @@
 body {
 background-image: url("images/track.png");
 }
+ p {
+    font-size:100px;
+    margin-top:-20px;
+    }
+    #popup {
+    width: 500px;
+    height: 600px;
+    background: #ede1d1;
+    border: 1px solid black;
+    margin:auto;
+    font-size:50px;
+    text-align:center;
+    }
