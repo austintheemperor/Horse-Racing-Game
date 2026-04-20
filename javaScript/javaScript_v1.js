@@ -1,4 +1,4 @@
-let money = 500
+let money = 1000
 
 horses = ["red", "blue", "green", "purple"]
 
