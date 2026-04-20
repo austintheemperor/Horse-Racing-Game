@@ -1,12 +1,14 @@
 let isRunning = false;
-const horseImg = document.getElementById('horse');
+const horseImg = document.getElementById('horse01');
+//grabs the alt so we can set it to the color we want
+const horseName = document.getElementById('horse01').getAttribute('alt');
 
 setInterval(() => {
   // Toggle between the two images
   if (isRunning) {
-    horseImg.src = 'images/normalHorse.png';
+    horseImg.src = `images/${horseName}Horse.png`;
   } else {
-    horseImg.src = 'images/normalHorseRun.png';
+    horseImg.src = `images/${horseName}HorseRun.png`;
   }
   // Flip the state
   isRunning = !isRunning;
