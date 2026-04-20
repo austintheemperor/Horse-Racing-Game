@@ -4,9 +4,9 @@ const horseImg = document.getElementById('horse');
 setInterval(() => {
   // Toggle between the two images
   if (isRunning) {
-    horseImg.src = 'normalHorse.png';
+    horseImg.src = 'images/normalHorse.png';
   } else {
-    horseImg.src = 'normalHorseRun.png';
+    horseImg.src = 'images/normalHorseRun.png';
   }
   // Flip the state
   isRunning = !isRunning;
