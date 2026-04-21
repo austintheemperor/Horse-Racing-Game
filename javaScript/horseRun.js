@@ -1,6 +1,6 @@
 let isRunning = false;
 const horseImg = document.getElementById('horse01');
-
+ea sports mc^2
 runSpeed = 200
 
 //grabs the alt so we can set it to the color we want
