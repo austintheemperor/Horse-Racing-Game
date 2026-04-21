@@ -6,8 +6,6 @@ runSpeed = 200
 //grabs the alt so we can set it to the color we want
 const horseName = document.getElementById('horse01').getAttribute('alt');
 
-
-
 setInterval(() => {
   // Toggle between the two images
   if (isRunning) {
