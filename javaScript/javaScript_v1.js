@@ -2,13 +2,11 @@ let money = 1000
 
 horses = ["red", "blue", "green", "purple"]
 
-function horseWinner() {
-    const randomHorse = horses[Math.floor(Math.random() * horses.length)]
-    return randomHorse
-}
+const randomHorse = horses[Math.floor(Math.random() * horses.length)]
+
 
 function bet(betAmount, horse) {
-    if (horse == horseWinner()) {
+    if (horse == randomHorse) {
         money += betAmount
     } else {
         money -= betAmount
