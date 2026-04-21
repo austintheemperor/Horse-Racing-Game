@@ -1,5 +1,8 @@
 let isRunning = false;
 const horseImg = document.getElementById('horse01');
+
+runSpeed = 200
+
 //grabs the alt so we can set it to the color we want
 const horseName = document.getElementById('horse01').getAttribute('alt');
 
@@ -12,5 +15,5 @@ setInterval(() => {
   }
   // Flip the state
   isRunning = !isRunning;
-}, 200); // Sets the time for the milliseconds
+}, runSpeed); // Sets the time for the milliseconds
 
