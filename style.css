@@ -14,3 +14,7 @@ background-image: url("images/track.png");
     font-size:50px;
     text-align:center;
     }
+
+    label {
+    font-size:30px;
+    }
