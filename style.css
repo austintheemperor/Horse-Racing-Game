@@ -21,6 +21,11 @@ background-image: url("images/track.png");
 .horse {
   position: absolute;
   transform: scaleX(-1) scale(0.6);
+   animation: moveSlowly 10s linear infinite; /* Adjust '10s' to change speed */
+}
+@keyframes moveSlowly {
+  from { left: -100px; } /* Start off-screen */
+  to { left: 100%; }    /* End off-screen on the other side */
 }
 
 #horse01 { top: 170px; }
