@@ -20,11 +20,11 @@ background-image: url("images/track.png");
     }
 .horse {
   position: absolute;
-  transform: scaleX(-1);
+  transform: scaleX(-1) scale(0.6);
 }
 
-#horse01 { top: 110px; }
-#horse02 { top: 250px; }
-#horse03 { top: 390px; }
-#horse04 { top: 530px; }
-#horse05 { top: 800px; }
+#horse01 { top: 170px; }
+#horse02 { top: 300px; }
+#horse03 { top: 420px; }
+#horse04 { top: 545px; }
+#horse05 { top: 670px; }
