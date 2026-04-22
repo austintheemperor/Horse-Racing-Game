@@ -1,18 +1,21 @@
-let isRunning = false;
-const horseImg = document.getElementById('horse01');
-runSpeed = 200
+const horses = document.querySelectorAll('.horse');
+let runSpeed = 200;
 
-//grabs the alt so we can set it to the color we want
-const horseName = document.getElementById('horse01').getAttribute('alt');
+horses.forEach(horse => {
+  let isRunning = false;
 
-setInterval(() => {
-  // Toggle between the two images
-  if (isRunning) {
-    horseImg.src = `images/${horseName}Horse.png`;
-  } else {
-    horseImg.src = `images/${horseName}HorseRun.png`;
-  }
-  // Flip the state
-  isRunning = !isRunning;
-}, runSpeed); // Sets the time for the milliseconds
+  // grab the alt for each horse
+  const horseName = horse.getAttribute('alt');
+
+  setInterval(() => {
+    if (isRunning) {
+      horse.src = `images/${horseName}Horse.png`;
+    } else {
+      horse.src = `images/${horseName}HorseRun.png`;
+    }
+
+    isRunning = !isRunning;
+  }, runSpeed);
+});
+
 
