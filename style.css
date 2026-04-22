@@ -18,3 +18,13 @@ background-image: url("images/track.png");
     label {
     font-size:30px;
     }
+.horse {
+  position: absolute;
+  transform: scaleX(-1);
+}
+
+#horse01 { top: 110px; }
+#horse02 { top: 250px; }
+#horse03 { top: 390px; }
+#horse04 { top: 530px; }
+#horse05 { top: 800px; }
