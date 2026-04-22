@@ -1,6 +1,6 @@
 let money = 1000
 
-horses = ["red", "blue", "green", "purple"]
+horses = ["red", "blue", "green", "purple", "pink"]
 
 const randomHorse = horses[Math.floor(Math.random() * horses.length)]
 
