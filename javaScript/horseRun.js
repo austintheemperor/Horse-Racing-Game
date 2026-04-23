@@ -27,7 +27,7 @@ horses.forEach(horse => {
     isRunning = !isRunning;
   }, runSpeed);
 
-  // Movement this where we can randomize the speed at all that i think. Perchance
+  // Movement. also this where we can randomize the speed at all that i think. Perchance.
   function moveHorse() {
     position += speed;
     horse.style.left = position + "px";
