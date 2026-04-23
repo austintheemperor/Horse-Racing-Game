@@ -34,7 +34,7 @@ horses.forEach(horse => {
     horse.style.left = position + "px";
 
     if (position < window.innerWidth) {
-      requestAnimationFrame(moveHorse);
+      requestAnimationFrame(moveHorse); // magic moving thingiy
     }
   }
 
