@@ -1,5 +1,5 @@
 const horses = document.querySelectorAll('.horse');
-let runSpeed = 200; // controls how fast legs animate
+
 
 // You can control the speeds of each horse here how fast they move across the screen
 const horseSpeeds = {
@@ -13,6 +13,7 @@ const horseSpeeds = {
 horses.forEach(horse => {
   let position = 0;
   let isRunning = false;
+  let runSpeed = 200 + Math.floor(Math.random() * 100) - 49; // controls how fast legs animate
 
   const horseName = horse.getAttribute('alt');
   let speed = horseSpeeds[horseName] || 3;
