@@ -3,19 +3,13 @@ const horses = document.querySelectorAll('.horse');
 
 // You can control the speeds of each horse here how fast they move across the screen
 const horseSpeeds = {
-  red: 3,
-  blue: 4,
-  green: 2.5,
-  pink: 3.5,
-  purple: 4.5
+  red: 3 + Math.random() * 2,
+  blue: 4 + Math.random() * 2,
+  green: 2.5 + Math.random() * 2,
+  pink: 3.5 + Math.random() * 2,
+  purple: 4.5 + Math.random() * 2
 };
-const horseSpeeds = {
-  red: 3,
-  blue: 4,
-  green: 2.5,
-  pink: 3.5,
-  purple: 4.5
-};
+
 
 horses.forEach(horse => {
   let position = 0;
