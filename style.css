@@ -23,6 +23,15 @@ background-image: url("images/track.png");
   left: 0;
   transform: scaleX(-1) scale(0.6);
 }
+#winnerText {
+  position: fixed;
+  top: 30%;
+  width: 100%;
+  text-align: center;
+  font-size: 80px;
+  color: gold;
+  text-shadow: 2px 2px 10px black;
+}
 
 #horse01 { top: 170px; }
 #horse02 { top: 300px; }

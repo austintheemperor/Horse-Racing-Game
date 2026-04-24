@@ -1,15 +1,39 @@
-let money = 1000
 
-horses = ["red", "blue", "green", "purple", "pink"]
+let chosenHorse = null; // what the player bets on
 
-const randomHorse = horses[Math.floor(Math.random() * horses.length)]
-const rect = horses.getBoundingClientRect();
-const hitRight = rect.right >= window.innerWidth;
+let raceOver = false;
 
-function bet(betAmount, horse) {
-    if (horse == randomHorse) {
-        money += betAmount
-    } else {
-        money -= betAmount
-    }
+
+// Show winner
+function declareWinner(horse) {
+    const winnerText = document.getElementById("winnerText");
+
+    const winner = horse.alt; // actual winning horse
+
+    const name = winner.charAt(0).toUpperCase() + winner.slice(1);
+    winnerText.innerText = name + " horse wins!";
+    winnerText.style.display = "block";
 }
+
+// Check for winner
+function checkWinner() {
+    if (raceOver) return;
+
+    const allHorses = document.querySelectorAll(".horse");
+    const screenWidth = window.innerWidth;
+
+    for (let horse of allHorses) {
+        const rect = horse.getBoundingClientRect();
+
+        if (rect.right >= screenWidth) {
+            raceOver = true;
+            declareWinner(horse);
+            return;
+        }
+    }
+
+    requestAnimationFrame(checkWinner);
+}
+
+// Start checking
+checkWinner();
