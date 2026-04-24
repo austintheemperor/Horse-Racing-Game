@@ -1,3 +1,5 @@
+money = 500
+
 
 let raceOver = false;
 // Show winner
@@ -33,3 +35,12 @@ function checkWinner() {
 
 // Start checking
 checkWinner();
+
+
+function bet(betAmount, horse) {
+    if (horse == randomHorse) {
+        money += betAmount
+    } else {
+        money -= betAmount
+    }
+}
