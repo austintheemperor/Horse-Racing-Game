@@ -9,6 +9,13 @@ const horseSpeeds = {
   pink: 3.5,
   purple: 4.5
 };
+const horseSpeeds = {
+  red: 3,
+  blue: 4,
+  green: 2.5,
+  pink: 3.5,
+  purple: 4.5
+};
 
 horses.forEach(horse => {
   let position = 0;
