@@ -14,10 +14,10 @@ const horseSpeeds = {
 horses.forEach(horse => {
   let position = 0;
   let isRunning = false;
-  let runSpeed = 200 + Math.floor(Math.random() * 100) - 49; // controls how fast legs animate
-
   const horseName = horse.getAttribute('alt');
-  let speed = horseSpeeds[horseName] || 3;
+  let runSpeed = 700 / (horseSpeeds[horseName]); // controls how fast legs animate
+
+  let speed = horseSpeeds[horseName] || 4;
 
   // Animation (image swapping)
   setInterval(() => {
@@ -35,7 +35,7 @@ horses.forEach(horse => {
     horse.style.left = position + "px";
 
     if (position < window.innerWidth) {
-      requestAnimationFrame(moveHorse); // magic moving thingiy little bit less magicu
+      requestAnimationFrame(moveHorse); // magic moving thingiy little bit less magic
     }
   }
 
