@@ -1,9 +1,5 @@
 
-let chosenHorse = null; // what the player bets on
-
 let raceOver = false;
-
-
 // Show winner
 function declareWinner(horse) {
     const winnerText = document.getElementById("winnerText");
