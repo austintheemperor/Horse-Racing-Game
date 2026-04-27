@@ -39,11 +39,11 @@ checkWinner();
 const menu = document.getElementById("menuOverlay");
 
 function openMenu() {
-  menu.classList.add("active");
+    menu.classList.add("active");
 }
 
 function closeMenu() {
-  menu.classList.remove("active");
+    menu.classList.remove("active");
 }
 
 function startGame() {
