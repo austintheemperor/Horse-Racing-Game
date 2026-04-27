@@ -46,7 +46,7 @@ function closeMenu() {
   menu.classList.remove("active");
 }
 
-function resumeGame() {
+function startGame() {
     closeMenu();
 }
 
