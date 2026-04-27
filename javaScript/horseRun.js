@@ -1,44 +1,42 @@
+// horseRun.js
+
 const horses = document.querySelectorAll('.horse');
 
+function startRace() {
+  const horseSpeeds = {
+    red: 3 + Math.random() * 2,
+    blue: 3 + Math.random() * 2,
+    green: 3 + Math.random() * 2,
+    pink: 3 + Math.random() * 2,
+    purple: 3 + Math.random() * 2
+  };
 
-// You can control the speeds of each horse here how fast they move across the screen
-const horseSpeeds = {
-  red: 3 + Math.random() * 2,
-  blue: 3 + Math.random() * 2,
-  green: 3 + Math.random() * 2,
-  pink: 3 + Math.random() * 2,
-  purple: 3 + Math.random() * 2
-};
+  horses.forEach(horse => {
+    let position = 0;
+    let isRunning = false;
 
+    const horseName = horse.getAttribute('alt');
+    let runSpeed = 700 / horseSpeeds[horseName];
+    let speed = horseSpeeds[horseName] || 4;
 
-horses.forEach(horse => {
-  let position = 0;
-  let isRunning = false;
-  const horseName = horse.getAttribute('alt');
-  let runSpeed = 700 / (horseSpeeds[horseName]); // controls how fast legs animate
+    setInterval(() => {
+      horse.src = isRunning
+        ? `images/${horseName}Horse.png`
+        : `images/${horseName}HorseRun.png`;
+      isRunning = !isRunning;
+    }, runSpeed);
 
-  let speed = horseSpeeds[horseName] || 4;
+    function moveHorse() {
+      position += speed;
+      horse.style.left = position + "px";
 
-  // Animation (image swapping)
-  setInterval(() => {
-    if (isRunning) {
-      horse.src = `images/${horseName}Horse.png`;
-    } else {
-      horse.src = `images/${horseName}HorseRun.png`;
+     if (position < window.innerWidth) {
+        requestAnimationFrame(moveHorse);
+      }
     }
-    isRunning = !isRunning;
-  }, runSpeed);
 
-  // Movement. also this where we can randomize the speed at all that i think. Perchance.
-  function moveHorse() {
-    position += speed;
-    horse.style.left = position + "px";
+    moveHorse();
+  });
+}
 
-    if (position < window.innerWidth) {
-      requestAnimationFrame(moveHorse); // magic moving thingiy little bit less magic
-    }
-  }
-
-  moveHorse();
-});
 
