@@ -8,16 +8,24 @@
     <body>
         <div id="field"></div>
 <!--        use the alt tag to select which color you want to use       -->
-         <img class="horse" id="horse01" alt="red" src="images/redHorse.png">
-         <img class="horse" id="horse02" alt="blue" src="images/blueHorse.png">
-         <img class="horse" id="horse03" alt="green" src="images/greenHorse.png">
-         <img class="horse" id="horse04" alt="pink" src="images/pinkHorse.png" >
-         <img class="horse" id="horse05" alt="purple" src="images/purpleHorse.png">
-<h1 id="winnerText"></h1>
+        <img class="horse" id="horse01" alt="red" src="images/redHorse.png">
+        <img class="horse" id="horse02" alt="blue" src="images/blueHorse.png">
+        <img class="horse" id="horse03" alt="green" src="images/greenHorse.png">
+        <img class="horse" id="horse04" alt="pink" src="images/pinkHorse.png" >
+        <img class="horse" id="horse05" alt="purple" src="images/purpleHorse.png">
+        <h1 id="winnerText"></h1>
+
+        <div id="menuOverlay" class="hidden">
+            <div class="menuBox">
+                <h2>Paused</h2>
+                <button onclick="resumeGame()">Resume</button>
+                <button onclick="restartGame()">Restart</button>
+            </div>
+        </div>
 
         <script src="javaScript/horseRun.js"></script>
         <script src="javaScript/javaScript_v1.js"></script>
 
-        </div>
+
     </body>
 </html>

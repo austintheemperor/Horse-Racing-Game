@@ -36,6 +36,24 @@ function checkWinner() {
 // Start checking
 checkWinner();
 
+const menu = document.getElementById("menuOverlay");
+
+function openMenu() {
+  menu.classList.add("active");
+}
+
+function closeMenu() {
+  menu.classList.remove("active");
+}
+
+function resumeGame() {
+    closeMenu();
+}
+
+function restartGame() {
+    location.reload();
+}
+openMenu()
 
 function bet(betAmount, horse) {
     if (horse == randomHorse) {

@@ -38,3 +38,34 @@ background-image: url("images/track.png");
 #horse03 { top: 420px; }
 #horse04 { top: 545px; }
 #horse05 { top: 670px; }
+
+
+
+
+#menuOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  background: rgba(0,0,0,0.6);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.2s;
+}
+
+#menuOverlay.active {
+  opacity: 1;
+  pointer-events: all;
+
+.menuBox {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+}
