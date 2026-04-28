@@ -9,7 +9,7 @@ const finishBtn = document.getElementById("restartRace");
 function declareWinner(horse) {
     const winnerText = document.getElementById("winnerText");
     const horseGamba = document.getElementById("horseGamba");
-    const selectedValue = horseWinner.value;
+    const selectedValue = horseGamba.value;
     const winner = horse.alt;
     if (selectedValue == winner) {
         money += betAmount;
