@@ -10,13 +10,13 @@ function declareWinner(horse) {
     const winnerText = document.getElementById("winnerText");
     const horseGamba = document.getElementById("horseGamba");
     const selectedValue = horseWinner.value;
-    if (selectedValue == horse) {
+    const winner = horse.alt;
+    if (selectedValue == winner) {
         money += betAmount;
     } else {
         money -= betAmount;
     }
 
-    const winner = horse.alt;
     const name = winner.charAt(0).toUpperCase() + winner.slice(1);
 
     winnerText.innerText = name + " horse wins!";
