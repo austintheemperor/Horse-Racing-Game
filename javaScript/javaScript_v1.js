@@ -1,9 +1,9 @@
 // money + race state
 let money = 500;
 let raceOver = false;
-
+var betAmount = 3;
 const menu = document.getElementById("menuOverlay");
-
+const finishBtn = document.getElementById("restartRace");
 
 // Show winner
 function declareWinner(horse) {
@@ -21,6 +21,7 @@ function declareWinner(horse) {
 
     winnerText.innerText = name + " horse wins!";
     winnerText.style.display = "block";
+    finishBtn.style.display = "block"
 }
 
 // Check winner
