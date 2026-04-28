@@ -1,7 +1,6 @@
 // money + race state
 let money = 500;
 let raceOver = false;
-var betAmount = 3;
 const menu = document.getElementById("menuOverlay");
 const finishBtn = document.getElementById("restartRace");
 
@@ -68,5 +67,3 @@ function startGame() {
 
 // open menu on load
 openMenu();
-
-document.getElementById("money").innerText = "Money: $" + money;
