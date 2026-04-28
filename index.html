@@ -15,7 +15,7 @@
         <img class="horse" id="horse04" alt="pink" src="images/pinkHorse.png" >
         <img class="horse" id="horse05" alt="purple" src="images/purpleHorse.png">
         <h1 id="winnerText"></h1>
-
+<button id="restartRace" style="display: none;">Next Race</button>
         <div id="menuOverlay" class="hidden">
             <div class="menuBox">
                 <label for="horsesGamba">Choose a horse:</label>
@@ -26,6 +26,8 @@
                     <option value="pink">Pink Horse</option>
                     <option value="purple">Purple Horse</option>
                 </select><br>
+                <label for="betAmount">Bet Amount:</label>
+                <input type="number" id="betAmount" name="betAmount">
                 <button onclick="startGame()">Start</button>
             </div>
         </div>
