@@ -24,6 +24,7 @@ function declareWinner(horse) {
     winnerText.innerText = name + " horse wins!";
     winnerText.style.display = "block";
     finishBtn.style.display = "block"
+    document.getElementById("money").innerText = "Money: $" + money;
 }
 
 // Check winner
