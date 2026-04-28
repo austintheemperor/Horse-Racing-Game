@@ -62,3 +62,5 @@ function startGame() {
 
 // open menu on load
 openMenu();
+
+document.getElementById("money").innerText = "Money: $" + money;
