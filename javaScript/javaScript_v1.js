@@ -7,6 +7,7 @@ const menu = document.getElementById("menuOverlay");
 // Show winner
 function declareWinner(horse) {
     const winnerText = document.getElementById("winnerText");
+    var horseWinner = horse
 
     const winner = horse.alt;
     const name = winner.charAt(0).toUpperCase() + winner.slice(1);
@@ -60,7 +61,7 @@ openMenu();
 
 // Betting
 function bet(betAmount, horse) {
-    if (horse == randomHorse) {
+    if (horse == horseWinner) {
         money += betAmount;
     } else {
         money -= betAmount;
