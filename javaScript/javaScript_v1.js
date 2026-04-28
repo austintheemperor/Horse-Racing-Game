@@ -4,10 +4,17 @@ let raceOver = false;
 
 const menu = document.getElementById("menuOverlay");
 
+
 // Show winner
 function declareWinner(horse) {
     const winnerText = document.getElementById("winnerText");
-    var horseWinner = horse
+    const horseGamba = document.getElementById("horseGamba");
+    const selectedValue = horseWinner.value;
+    if (selectedValue == horse) {
+        money += betAmount;
+    } else {
+        money -= betAmount;
+    }
 
     const winner = horse.alt;
     const name = winner.charAt(0).toUpperCase() + winner.slice(1);
@@ -52,18 +59,6 @@ function startGame() {
     checkWinner();          // start checking AFTER race starts
 }
 
-function restartGame() {
-    location.reload();
-}
 
 // open menu on load
 openMenu();
-
-// Betting
-function bet(betAmount, horse) {
-    if (horse == horseWinner) {
-        money += betAmount;
-    } else {
-        money -= betAmount;
-    }
-}
