@@ -73,7 +73,7 @@ label {
   right: 20px;  /* Distance from the right */
   z-index: 999; /* Ensure it stays above other elements */
   padding: 10px 20px;
-  background-color: #007bff;
+  background-color: #ff0d0d;
   color: white;
   border: none;
   border-radius: 5px;
