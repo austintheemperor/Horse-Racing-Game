@@ -47,6 +47,7 @@ function checkWinner() {
 
 // Menu
 function openMenu() {
+    document.getElementById("winnerText").style.display = "none";
     menu.classList.add("active");
 }
 
@@ -57,7 +58,6 @@ function closeMenu() {
 // Start button
 function startGame() {
     raceOver = false;       // reset race state
- document.getElementById("winnerText").style.display = "none";
     finishBtn.style.display = "none"
     closeMenu();
     startRace();            // from horse.js
