@@ -1,0 +1,15 @@
+Index: javaScript/javaScript_v1.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>\nlet raceOver = false;\n// Show winner\nfunction declareWinner(horse) {\n    const winnerText = document.getElementById(\"winnerText\");\n\n    const winner = horse.alt; // actual winning horse\n\n    const name = winner.charAt(0).toUpperCase() + winner.slice(1);\n    winnerText.innerText = name + \" horse wins!\";\n    winnerText.style.display = \"block\";\n}\n\n// Check for winner\nfunction checkWinner() {\n    if (raceOver) return;\n\n    const allHorses = document.querySelectorAll(\".horse\");\n    const screenWidth = window.innerWidth;\n\n    for (let horse of allHorses) {\n        const rect = horse.getBoundingClientRect();\n\n        if (rect.right >= screenWidth) {\n            raceOver = true;\n            declareWinner(horse);\n            return;\n        }\n    }\n\n    requestAnimationFrame(checkWinner);\n}\n\n// Start checking\ncheckWinner();\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/javaScript/javaScript_v1.js b/javaScript/javaScript_v1.js
+--- a/javaScript/javaScript_v1.js	(revision de1ca7fadb8ce3a63a89c73fc79e0cc049589539)
++++ b/javaScript/javaScript_v1.js	(date 1777038400538)
+@@ -1,4 +1,3 @@
+-
+ let raceOver = false;
+ // Show winner
+ function declareWinner(horse) {

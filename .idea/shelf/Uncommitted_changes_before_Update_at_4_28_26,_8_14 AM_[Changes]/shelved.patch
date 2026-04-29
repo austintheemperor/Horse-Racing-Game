@@ -1,0 +1,74 @@
+Index: index.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><!DOCTYPE html>\n<html lang=\"en\">\n    <head>\n        <meta charset=\"UTF-8\">\n        <title>Horse</title>\n        <link rel=\"stylesheet\" href=\"style.css\">\n    </head>\n    <body>\n        <div id=\"field\"></div>\n<!--        use the alt tag to select which color you want to use       -->\n        <img class=\"horse\" id=\"horse01\" alt=\"red\" src=\"images/redHorse.png\">\n        <img class=\"horse\" id=\"horse02\" alt=\"blue\" src=\"images/blueHorse.png\">\n        <img class=\"horse\" id=\"horse03\" alt=\"green\" src=\"images/greenHorse.png\">\n        <img class=\"horse\" id=\"horse04\" alt=\"pink\" src=\"images/pinkHorse.png\" >\n        <img class=\"horse\" id=\"horse05\" alt=\"purple\" src=\"images/purpleHorse.png\">\n        <h1 id=\"winnerText\"></h1>\n\n        <div id=\"menuOverlay\" class=\"hidden\">\n            <div class=\"menuBox\">\n                <label for=\"horsesGamba\">Choose a horse:</label>\n                <select id=\"horsesGamba\" name=\"horses\">\n                    <option value=\"red\">Red Horse</option>\n                    <option value=\"blue\">Blue Horse</option>\n                    <option value=\"green\">Green Horse</option>\n                    <option value=\"pink\">Pink Horse</option>\n                    <option value=\"purple\">Purple Horse</option>\n                </select><br>\n                <button onclick=\"startGame()\">Start</button>\n                <button onclick=\"restartGame()\">Restart</button>\n            </div>\n        </div>\n\n        <script src=\"javaScript/horseRun.js\"></script>\n        <script src=\"javaScript/javaScript_v1.js\"></script>\n\n\n    </body>\n</html>\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/index.html b/index.html
+--- a/index.html	(revision 98d386b482f93d2b6547761f6e47416416b1a9a2)
++++ b/index.html	(date 1777381925821)
+@@ -14,7 +14,7 @@
+         <img class="horse" id="horse04" alt="pink" src="images/pinkHorse.png" >
+         <img class="horse" id="horse05" alt="purple" src="images/purpleHorse.png">
+         <h1 id="winnerText"></h1>
+-
++<button id="restartRace" style="display: none;">Next Race</button>
+         <div id="menuOverlay" class="hidden">
+             <div class="menuBox">
+                 <label for="horsesGamba">Choose a horse:</label>
+Index: style.css
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>body {\r\n    background-image: url(\"images/track.png\");\r\n}\r\np {\r\n    font-size:100px;\r\n    margin-top:-20px;\r\n}\r\n#popup {\r\n    width: 500px;\r\n    height: 600px;\r\n    background: #ede1d1;\r\n    border: 1px solid black;\r\n    margin:auto;\r\n    font-size:50px;\r\n    text-align:center;\r\n}\r\n\r\nlabel {\r\n    font-size:15px;\r\n}\r\n.horse {\r\n    position: absolute;\r\n    left: 0;\r\n    transform: scaleX(-1) scale(0.6);\r\n}\r\n#winnerText {\r\n    position: fixed;\r\n    top: 30%;\r\n    width: 100%;\r\n    text-align: center;\r\n    font-size: 80px;\r\n    color: gold;\r\n    text-shadow: 2px 2px 10px black;\r\n}\r\n\r\n#horse01 { top: 170px; }\r\n#horse02 { top: 300px; }\r\n#horse03 { top: 420px; }\r\n#horse04 { top: 545px; }\r\n#horse05 { top: 670px; }\r\n\r\n\r\n#menuOverlay {\r\n    position: fixed;\r\n    top: 0;\r\n    left: 0;\r\n    width: 100%;\r\n    height: 100%;\r\n\r\n    background: rgba(0,0,0,0.6);\r\n\r\n    display: flex;\r\n    justify-content: center;\r\n    align-items: center;\r\n\r\n    opacity: 0;\r\n    pointer-events: none;\r\n    transition: 0.2s;\r\n}\r\n\r\n#menuOverlay.active {\r\n    opacity: 1;\r\n    pointer-events: all;\r\n}\r\n.menuBox {\r\n    background: white;\r\n    padding: 20px;\r\n    border-radius: 10px;\r\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/style.css b/style.css
+--- a/style.css	(revision 98d386b482f93d2b6547761f6e47416416b1a9a2)
++++ b/style.css	(date 1777381879883)
+@@ -66,4 +66,16 @@
+     background: white;
+     padding: 20px;
+     border-radius: 10px;
++}
++#restartRace {
++  position: fixed;
++  top: 20px;    /* Distance from the top */
++  right: 20px;  /* Distance from the right */
++  z-index: 999; /* Ensure it stays above other elements */
++  padding: 10px 20px;
++  background-color: #007bff;
++  color: white;
++  border: none;
++  border-radius: 5px;
++  cursor: pointer;
+ }
+\ No newline at end of file
+Index: javaScript/javaScript_v1.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>// money + race state\nlet money = 500;\nlet raceOver = false;\n\nconst menu = document.getElementById(\"menuOverlay\");\n\n// Show winner\nfunction declareWinner(horse) {\n    const winnerText = document.getElementById(\"winnerText\");\n    var horseWinner = horse\n\n    const winner = horse.alt;\n    const name = winner.charAt(0).toUpperCase() + winner.slice(1);\n\n    winnerText.innerText = name + \" horse wins!\";\n    winnerText.style.display = \"block\";\n}\n\n// Check winner\nfunction checkWinner() {\n    if (raceOver) return;\n\n    const allHorses = document.querySelectorAll(\".horse\");\n\n    for (let horse of allHorses) {\n        const rect = horse.getBoundingClientRect();\n\n        if (rect.right >= window.innerWidth) {\n            raceOver = true;\n            declareWinner(horse);\n            return;\n        }\n    }\n\n    requestAnimationFrame(checkWinner);\n}\n\n// Menu\nfunction openMenu() {\n    menu.classList.add(\"active\");\n}\n\nfunction closeMenu() {\n    menu.classList.remove(\"active\");\n}\n\n// Start button\nfunction startGame() {\n    raceOver = false;       // reset race state\n    closeMenu();\n    startRace();            // from horse.js\n    checkWinner();          // start checking AFTER race starts\n}\n\nfunction restartGame() {\n    location.reload();\n}\n\n// open menu on load\nopenMenu();\n\n// Betting\nfunction bet(betAmount, horse) {\n    if (horse == horseWinner) {\n        money += betAmount;\n    } else {\n        money -= betAmount;\n    }\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/javaScript/javaScript_v1.js b/javaScript/javaScript_v1.js
+--- a/javaScript/javaScript_v1.js	(revision 98d386b482f93d2b6547761f6e47416416b1a9a2)
++++ b/javaScript/javaScript_v1.js	(date 1777381986461)
+@@ -3,7 +3,7 @@
+ let raceOver = false;
+ 
+ const menu = document.getElementById("menuOverlay");
+-
++const finishBtn = document.getElementById("endRaceBtn");
+ // Show winner
+ function declareWinner(horse) {
+     const winnerText = document.getElementById("winnerText");
+@@ -14,6 +14,7 @@
+ 
+     winnerText.innerText = name + " horse wins!";
+     winnerText.style.display = "block";
++    finishBtn.style.display = "block"
+ }
+ 
+ // Check winner

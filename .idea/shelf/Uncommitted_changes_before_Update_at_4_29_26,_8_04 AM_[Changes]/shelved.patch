@@ -1,0 +1,19 @@
+Index: javaScript/javaScript_v1.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>// money + race state\nlet money = 500;\nlet raceOver = false;\nconst menu = document.getElementById(\"menuOverlay\");\nconst finishBtn = document.getElementById(\"restartRace\");\n\n// Show winner\nfunction declareWinner(horse) {\n    const winnerText = document.getElementById(\"winnerText\");\n    const horseGamba = document.getElementById(\"horseGamba\");\n    const betting = document.getElementById(\"betAmount\");\n    const betAmount = betting.value;\n    const selectedValue = horseGamba.value;\n    const winner = horse.alt;\n    if (selectedValue == winner) {\n        money += betAmount;\n    } else {\n        money -= betAmount;\n    }\n\n    const name = winner.charAt(0).toUpperCase() + winner.slice(1);\n\n    winnerText.innerText = name + \" horse wins!\";\n    winnerText.style.display = \"block\";\n    finishBtn.style.display = \"block\"\n    document.getElementById(\"money\").innerText = \"Money: $\" + money;\n}\n\n// Check winner\nfunction checkWinner() {\n    if (raceOver) return;\n\n    const allHorses = document.querySelectorAll(\".horse\");\n\n    for (let horse of allHorses) {\n        const rect = horse.getBoundingClientRect();\n\n        if (rect.right >= window.innerWidth) {\n            raceOver = true;\n            declareWinner(horse);\n            return;\n        }\n    }\n\n    requestAnimationFrame(checkWinner);\n}\n\n// Menu\nfunction openMenu() {\n    menu.classList.add(\"active\");\n}\n\nfunction closeMenu() {\n    menu.classList.remove(\"active\");\n}\n\n// Start button\nfunction startGame() {\n    raceOver = false;       // reset race state\n document.getElementById(\"winnerText\").style.display = \"none\";\n    finishBtn.style.display = \"none\"\n    closeMenu();\n    startRace();            // from horse.js\n    checkWinner();          // start checking AFTER race starts\n}\n\n\n// open menu on load\nopenMenu();\n\ndocument.getElementById(\"money\").innerText = \"Money: $\" + money;\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/javaScript/javaScript_v1.js b/javaScript/javaScript_v1.js
+--- a/javaScript/javaScript_v1.js	(revision 728a7c7a83a4c56256dfc1eaca1be0a4302f053f)
++++ b/javaScript/javaScript_v1.js	(date 1777383993423)
+@@ -9,7 +9,7 @@
+     const winnerText = document.getElementById("winnerText");
+     const horseGamba = document.getElementById("horseGamba");
+     const betting = document.getElementById("betAmount");
+-    const betAmount = betting.value;
++    let betAmount = betting.value;
+     const selectedValue = horseGamba.value;
+     const winner = horse.alt;
+     if (selectedValue == winner) {

@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="aca4ff12-523c-4dd7-8c5d-5589fb30afb7" name="Changes" comment="solething fix with moneyu" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="HARD" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Tech-010&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/austintheemperor/Horse-Racing-Game.git&quot;,
+    &quot;accountId&quot;: &quot;add286f9-037a-48c8-a170-66f3004a7aa0&quot;
+  }
+}</component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
+  <component name="ProjectId" id="3CfYk5P7K2sD6zrDJZNAeRy4wcJ" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main"
+  }
+}]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-python-sdk-02acdf704d18-cbfc7b97e6b2-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-252.28539.27" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="aca4ff12-523c-4dd7-8c5d-5589fb30afb7" name="Changes" comment="" />
+      <created>1776778232378</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1776778232378</updated>
+    </task>
+    <task id="LOCAL-00001" summary="Its in the game!">
+      <option name="closed" value="true" />
+      <created>1776778328419</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1776778328419</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Its not in the game anymore oh no sad">
+      <option name="closed" value="true" />
+      <created>1776778384308</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1776778384308</updated>
+    </task>
+    <task id="LOCAL-00003" summary="doing the multiple horse animations">
+      <option name="closed" value="true" />
+      <created>1776863151143</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1776863151143</updated>
+    </task>
+    <task id="LOCAL-00004" summary="doing the multiple horse animations fixing it">
+      <option name="closed" value="true" />
+      <created>1776863513015</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1776863513015</updated>
+    </task>
+    <task id="LOCAL-00005" summary="doing the mutilple horse fixed">
+      <option name="closed" value="true" />
+      <created>1776865034258</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1776865034258</updated>
+    </task>
+    <task id="LOCAL-00006" summary="doing the mutilple horse fixed">
+      <option name="closed" value="true" />
+      <created>1776865523352</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1776865523352</updated>
+    </task>
+    <task id="LOCAL-00007" summary="animation moving thingy">
+      <option name="closed" value="true" />
+      <created>1776865692816</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1776865692816</updated>
+    </task>
+    <task id="LOCAL-00008" summary="animation moving thingy">
+      <option name="closed" value="true" />
+      <created>1776950052126</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1776950052126</updated>
+    </task>
+    <task id="LOCAL-00009" summary="animation moving thingy small text fix">
+      <option name="closed" value="true" />
+      <created>1776950148442</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1776950148442</updated>
+    </task>
+    <task id="LOCAL-00010" summary="adding random to leg speed">
+      <option name="closed" value="true" />
+      <created>1776950864046</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1776950864046</updated>
+    </task>
+    <task id="LOCAL-00011" summary="adding coments">
+      <option name="closed" value="true" />
+      <created>1776951117290</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1776951117290</updated>
+    </task>
+    <task id="LOCAL-00012" summary="adding coments">
+      <option name="closed" value="true" />
+      <created>1776951852324</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1776951852324</updated>
+    </task>
+    <task id="LOCAL-00013" summary="adding coments asdfasdf">
+      <option name="closed" value="true" />
+      <created>1777036164791</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1777036164791</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Randomizing the winner">
+      <option name="closed" value="true" />
+      <created>1777036626637</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1777036626637</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Randomizing the winner part 2">
+      <option name="closed" value="true" />
+      <created>1777036748978</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1777036748978</updated>
+    </task>
+    <task id="LOCAL-00016" summary="hit right thingy for winner">
+      <option name="closed" value="true" />
+      <created>1777037023863</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1777037023863</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Defines winnner">
+      <option name="closed" value="true" />
+      <created>1777037912526</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1777037912526</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Defines winnner">
+      <option name="closed" value="true" />
+      <created>1777037987102</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1777037987102</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Allow the start menu to start the race">
+      <option name="closed" value="true" />
+      <created>1777297617859</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1777297617859</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Tries to get the button working">
+      <option name="closed" value="true" />
+      <created>1777382352253</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1777382352253</updated>
+    </task>
+    <task id="LOCAL-00021" summary="color for the button">
+      <option name="closed" value="true" />
+      <created>1777382930661</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1777382930661</updated>
+    </task>
+    <task id="LOCAL-00022" summary="winner text fix">
+      <option name="closed" value="true" />
+      <created>1777383452317</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1777383452317</updated>
+    </task>
+    <task id="LOCAL-00023" summary="solething fix with moneyu">
+      <option name="closed" value="true" />
+      <created>1777467997490</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1777467997490</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Its in the game!" />
+    <MESSAGE value="Its not in the game anymore oh no sad" />
+    <MESSAGE value="doing the multiple horse animations" />
+    <MESSAGE value="doing the multiple horse animations fixing it" />
+    <MESSAGE value="doing the mutilple horse fixed" />
+    <MESSAGE value="animation moving thingy" />
+    <MESSAGE value="animation moving thingy small text fix" />
+    <MESSAGE value="adding random to leg speed" />
+    <MESSAGE value="adding coments" />
+    <MESSAGE value="adding coments asdfasdf" />
+    <MESSAGE value="Randomizing the winner" />
+    <MESSAGE value="Randomizing the winner part 2" />
+    <MESSAGE value="hit right thingy for winner" />
+    <MESSAGE value="Defines winnner" />
+    <MESSAGE value="Allow the start menu to start the race" />
+    <MESSAGE value="Tries to get the button working" />
+    <MESSAGE value="color for the button" />
+    <MESSAGE value="winner text fix" />
+    <MESSAGE value="solething fix with moneyu" />
+    <option name="LAST_COMMIT_MESSAGE" value="solething fix with moneyu" />
+  </component>
+</project>
