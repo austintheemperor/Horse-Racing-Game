@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aca4ff12-523c-4dd7-8c5d-5589fb30afb7" name="Changes" comment="changing when winner is hid" />
+    <list default="true" id="aca4ff12-523c-4dd7-8c5d-5589fb30afb7" name="Changes" comment="fix">
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javaScript/javaScript_v1.js" beforeDir="false" afterPath="$PROJECT_DIR$/javaScript/javaScript_v1.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -245,23 +248,7 @@
       <option name="project" value="LOCAL" />
       <updated>1777467997490</updated>
     </task>
-    <task id="LOCAL-00024" summary="changing when winner is hid">
-      <option name="closed" value="true" />
-      <created>1777469758849</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1777469758849</updated>
-    </task>
-    <task id="LOCAL-00025" summary="changing when winner is hid">
-      <option name="closed" value="true" />
-      <created>1777470016673</created>
-      <option name="number" value="00025" />
-      <option name="presentableId" value="LOCAL-00025" />
-      <option name="project" value="LOCAL" />
-      <updated>1777470016673</updated>
-    </task>
-    <option name="localTasksCounter" value="26" />
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -295,7 +282,6 @@
     <MESSAGE value="color for the button" />
     <MESSAGE value="winner text fix" />
     <MESSAGE value="solething fix with moneyu" />
-    <MESSAGE value="changing when winner is hid" />
-    <option name="LAST_COMMIT_MESSAGE" value="changing when winner is hid" />
+    <option name="LAST_COMMIT_MESSAGE" value="solething fix with moneyu" />
   </component>
 </project>
