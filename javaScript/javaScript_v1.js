@@ -13,9 +13,7 @@ function declareWinner(horse) {
     const selectedValue = horseGamba.value;
     const winner = horse.alt;
     if (selectedValue == winner) {
-        money += betAmount;
-    } else {
-        money -= betAmount;
+        money += betAmount * 2;
     }
 
     const name = winner.charAt(0).toUpperCase() + winner.slice(1);
@@ -58,6 +56,22 @@ function closeMenu() {
 
 // Start button
 function startGame() {
+const betting = document.getElementById("betAmount");
+    const betAmount = Number(betting.value);
+
+if (money <= 0) {
+alert("You have no money left");
+return;
+}
+
+if (betAmount > money) {
+alert("You don't have enough money");
+return;
+}
+
+money -= betAmount;
+    document.getElementById("money").innerText = "Money: $" + money;
+
     raceOver = false;       // reset race state
     closeMenu();
     startRace();            // from horse.js
