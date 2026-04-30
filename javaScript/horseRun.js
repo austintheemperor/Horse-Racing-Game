@@ -1,8 +1,10 @@
 // horseRun.js
 
 const horses = document.querySelectorAll('.horse');
-
+let horseIntervals = [];
 function startRace() {
+ horseIntervals.forEach(interval => clearInterval(interval));
+  horseIntervals = [];
   const horseSpeeds = {
     red: 3 + Math.random() * 2,
     blue: 3 + Math.random() * 2,
@@ -19,12 +21,14 @@ function startRace() {
     let runSpeed = 700 / horseSpeeds[horseName];
     let speed = horseSpeeds[horseName] || 4;
 
-    setInterval(() => {
+  const interval = setInterval(() => {
       horse.src = isRunning
         ? `images/${horseName}Horse.png`
         : `images/${horseName}HorseRun.png`;
       isRunning = !isRunning;
     }, runSpeed);
+
+        horseIntervals.push(interval);
 
     function moveHorse() {
       position += speed;
