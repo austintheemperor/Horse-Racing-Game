@@ -81,3 +81,16 @@ label {
   cursor: pointer;
    display: none;
 }
+
+.tug {
+width:400px;
+height:150px;
+margin:auto;
+margin-top:120px;
+background: #ffffff;
+}
+
+.home {
+background:green;
+}
+
