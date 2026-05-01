@@ -91,7 +91,12 @@ background: #ffffff;
 }
 
 .home {
-background:green;
+margin: 0;
+    background-image: url("images/track.png");
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-size: cover;
+}
 }
 .dev-box {
   position: fixed;
