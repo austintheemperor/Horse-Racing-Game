@@ -5,8 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="aca4ff12-523c-4dd7-8c5d-5589fb30afb7" name="Changes" comment="fix the leg animation">
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_4_24_26,_8_47 AM_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_4_24_26__8_47AM__Changes_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/Homepage.html" beforeDir="false" afterPath="$PROJECT_DIR$/images/Homepage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Creatorpage.html" beforeDir="false" afterPath="$PROJECT_DIR$/images/Creatorpage.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
