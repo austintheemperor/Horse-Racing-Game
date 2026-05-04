@@ -22,6 +22,11 @@ function declareWinner(horse) {
     winnerText.style.display = "block";
     finishBtn.style.display = "block"
     document.getElementById("money").innerText = "Money: $" + money;
+    confetti({
+        particleCount: 150,
+        spread: 70,
+        origin: { y: 0.6 }
+    });
 }
 
 // Check winner
