@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aca4ff12-523c-4dd7-8c5d-5589fb30afb7" name="Changes" comment="fixing animation">
-      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webPages/Homepage.html" beforeDir="false" afterPath="$PROJECT_DIR$/webPages/Homepage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webPages/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/webPages/index.html" afterDir="false" />
+    <list default="true" id="aca4ff12-523c-4dd7-8c5d-5589fb30afb7" name="Changes" comment="credits page make it look nice">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Creatorpage.html" beforeDir="false" afterPath="$PROJECT_DIR$/webPages/Creatorpage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Tutorial.html" beforeDir="false" afterPath="$PROJECT_DIR$/webPages/Tutorial.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/webPages/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -277,31 +278,7 @@
       <option name="project" value="LOCAL" />
       <updated>1777900484602</updated>
     </task>
-    <task id="LOCAL-00026" summary="move files into folder">
-      <option name="closed" value="true" />
-      <created>1777986663781</created>
-      <option name="number" value="00026" />
-      <option name="presentableId" value="LOCAL-00026" />
-      <option name="project" value="LOCAL" />
-      <updated>1777986663781</updated>
-    </task>
-    <task id="LOCAL-00027" summary="move files into folder">
-      <option name="closed" value="true" />
-      <created>1777986710155</created>
-      <option name="number" value="00027" />
-      <option name="presentableId" value="LOCAL-00027" />
-      <option name="project" value="LOCAL" />
-      <updated>1777986710155</updated>
-    </task>
-    <task id="LOCAL-00028" summary="fixing animation">
-      <option name="closed" value="true" />
-      <created>1777986959995</created>
-      <option name="number" value="00028" />
-      <option name="presentableId" value="LOCAL-00028" />
-      <option name="project" value="LOCAL" />
-      <updated>1777986959995</updated>
-    </task>
-    <option name="localTasksCounter" value="29" />
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -337,8 +314,6 @@
     <MESSAGE value="solething fix with moneyu" />
     <MESSAGE value="fix the leg animation" />
     <MESSAGE value="credits page make it look nice" />
-    <MESSAGE value="move files into folder" />
-    <MESSAGE value="fixing animation" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixing animation" />
+    <option name="LAST_COMMIT_MESSAGE" value="credits page make it look nice" />
   </component>
 </project>
