@@ -23,8 +23,8 @@ function startRace() {
 
   const interval = setInterval(() => {
       horse.src = isRunning
-        ? `images/${horseName}Horse.png`
-        : `images/${horseName}HorseRun.png`;
+        ? `../images/${horseName}Horse.png`
+        : `../images/${horseName}HorseRun.png`;
       isRunning = !isRunning;
     }, runSpeed);
 
