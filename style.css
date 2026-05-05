@@ -110,7 +110,10 @@ color: white;
 
 li a {
 color: white;
-
+text-decoration: none;
+}
+li a:hover {
+  text-decoration: underline;
 }
 
 
