@@ -103,10 +103,16 @@ height:150px;
 background: #e3dcba;
 }
 
-a {
+button a {
 font-size:75px;
 color: white;
 }
+
+li a {
+color: white;
+
+}
+
 
 .home {
 margin: 0;
