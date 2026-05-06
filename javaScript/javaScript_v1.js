@@ -1,8 +1,16 @@
 // money + race state
-let money = 500;
+let money = localStorage.getItem("userMoney");
 let raceOver = false;
 const menu = document.getElementById("menuOverlay");
 const finishBtn = document.getElementById("restartRace");
+
+
+if (money === null) {
+    money = 500; // default starting money
+} else {
+    money = Number(money);
+}
+
 
 // Show winner
 function declareWinner(horse) {
@@ -12,9 +20,13 @@ function declareWinner(horse) {
     const betAmount = Number(betting.value);
     const selectedValue = horseGamba.value;
     const winner = horse.alt;
+
     if (selectedValue == winner) {
         money += betAmount * 2;
     }
+
+    // save AFTER updating
+    localStorage.setItem("userMoney", money);
 
     const name = winner.charAt(0).toUpperCase() + winner.slice(1);
 
@@ -74,7 +86,12 @@ alert("You don't have enough money");
 return;
 }
 
+
 money -= betAmount;
+
+//save
+localStorage.setItem("userMoney", money);
+
     document.getElementById("money").innerText = "Money: $" + money;
 
     raceOver = false;       // reset race state
@@ -88,3 +105,12 @@ money -= betAmount;
 openMenu();
 
 document.getElementById("money").innerText = "Money: $" + money;
+
+
+document.addEventListener('keydown', function(event) {
+    // Check if the pressed key is 'Escape'
+    if (event.key === 'Escape') {
+        // Redirect to your homepage URL
+        window.location.href = 'Homepage.html';
+    }
+});
