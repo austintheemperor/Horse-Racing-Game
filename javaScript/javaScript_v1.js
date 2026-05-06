@@ -3,6 +3,11 @@ let money = localStorage.getItem("userMoney");
 let raceOver = false;
 const menu = document.getElementById("menuOverlay");
 const finishBtn = document.getElementById("restartRace");
+const homeButton = document.getElementById("homeButton");
+
+homeButton.onclick = function () {
+    window.location.href = "Homepage.html";
+};
 
 
 if (money === null) {
@@ -33,6 +38,7 @@ function declareWinner(horse) {
     winnerText.innerText = name + " horse wins!";
     winnerText.style.display = "block";
     finishBtn.style.display = "block"
+    homeButton.style.display = "block";
     document.getElementById("money").innerText = "Money: $" + money;
     confetti({
         particleCount: 150,
@@ -64,6 +70,7 @@ function checkWinner() {
 function openMenu() {
     document.getElementById("winnerText").style.display = "none";
     finishBtn.style.display = "none";
+    homeButton.style.display = "none";
     menu.classList.add("active");
 }
 

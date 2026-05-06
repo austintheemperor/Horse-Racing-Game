@@ -162,3 +162,14 @@ align-items: center;
 gap: 50px;
 }
 
+#homeButton {
+position:fixed;
+top:20px;
+right:160px;
+background-color:#ff0d0d;
+border-radius:5px;
+width:100px;
+height:35px;
+color:white;
+border:none;
+}
