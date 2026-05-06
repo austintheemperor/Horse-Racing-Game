@@ -10,7 +10,7 @@ homeButton.onclick = function () {
 };
 
 
-if (money === null) {
+if (money == 0) {
     money = 500; // default starting money
 } else {
     money = Number(money);
