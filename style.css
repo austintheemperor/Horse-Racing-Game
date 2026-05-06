@@ -106,6 +106,10 @@ background: #e3dcba;
 button a {
 font-size:75px;
 color: white;
+text-decoration: none;
+}
+button a:hover {
+text-decoration: underline;
 }
 
 li a {
