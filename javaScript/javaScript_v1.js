@@ -3,14 +3,9 @@ let money = localStorage.getItem("userMoney");
 let raceOver = false;
 const menu = document.getElementById("menuOverlay");
 const finishBtn = document.getElementById("restartRace");
-const homeButton = document.getElementById("homeButton");
-
-homeButton.onclick = function () {
-    window.location.href = "Homepage.html";
-};
 
 
-if (money == 0) {
+if (money === null) {
     money = 500; // default starting money
 } else {
     money = Number(money);
@@ -38,7 +33,6 @@ function declareWinner(horse) {
     winnerText.innerText = name + " horse wins!";
     winnerText.style.display = "block";
     finishBtn.style.display = "block"
-    homeButton.style.display = "block";
     document.getElementById("money").innerText = "Money: $" + money;
     confetti({
         particleCount: 150,
@@ -68,10 +62,19 @@ function checkWinner() {
 
 // Menu
 function openMenu() {
-    document.getElementById("winnerText").style.display = "none";
-    finishBtn.style.display = "none";
-    homeButton.style.display = "none";
-    menu.classList.add("active");
+    const winnerText = document.getElementById("winnerText");
+
+    if (winnerText) {
+        winnerText.style.display = "none";
+    }
+
+    if (finishBtn) {
+        finishBtn.style.display = "none";
+    }
+
+    if (menu) {
+        menu.classList.add("active");
+    }
 }
 
 function closeMenu() {
@@ -109,9 +112,12 @@ localStorage.setItem("userMoney", money);
 
 
 // open menu on load
-openMenu();
+// only run on the race page
+if (document.body.id === "index") {
+    openMenu();
 
-document.getElementById("money").innerText = "Money: $" + money;
+    document.getElementById("money").innerText = "Money: $" + money;
+}
 
 
 document.addEventListener('keydown', function(event) {
