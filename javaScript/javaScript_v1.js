@@ -36,7 +36,9 @@ function declareWinner(horse) {
 
     winnerText.innerText = name + " horse wins!";
     winnerText.style.display = "block";
+    if (money != 0) {
     finishBtn.style.display = "block";
+    }
     homeButton.style.display = "block";
     document.getElementById("money").innerText = "Money: $" + money;
     confetti({
