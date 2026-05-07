@@ -5,7 +5,7 @@ const menu = document.getElementById("menuOverlay");
 const finishBtn = document.getElementById("restartRace");
 
 
-if (money === null) {
+if (money == 0) {
     money = 500; // default starting money
 } else {
     money = Number(money);
