@@ -5,9 +5,11 @@ const menu = document.getElementById("menuOverlay");
 const finishBtn = document.getElementById("restartRace");
 const homeButton = document.getElementById("homeButton");
 
-homeButton.onclick = function () {
-    window.location.href = "Homepage.html";
-};
+if (homeButton) {
+    homeButton.onclick = function () {
+        window.location.href = "Homepage.html";
+    };
+}
 
 
 

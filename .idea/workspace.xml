@@ -6,10 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="aca4ff12-523c-4dd7-8c5d-5589fb30afb7" name="Changes" comment="fixing some things">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javaScript/javaScript_v1.js" beforeDir="false" afterPath="$PROJECT_DIR$/javaScript/javaScript_v1.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webPages/Creatorpage.html" beforeDir="false" afterPath="$PROJECT_DIR$/webPages/Creatorpage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webPages/Tutorial.html" beforeDir="false" afterPath="$PROJECT_DIR$/webPages/Tutorial.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -319,15 +316,7 @@
       <option name="project" value="LOCAL" />
       <updated>1778075352625</updated>
     </task>
-    <task id="LOCAL-00031" summary="fixing some things">
-      <option name="closed" value="true" />
-      <created>1778159735135</created>
-      <option name="number" value="00031" />
-      <option name="presentableId" value="LOCAL-00031" />
-      <option name="project" value="LOCAL" />
-      <updated>1778159735135</updated>
-    </task>
-    <option name="localTasksCounter" value="32" />
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
