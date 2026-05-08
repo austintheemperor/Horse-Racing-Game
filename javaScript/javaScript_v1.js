@@ -142,3 +142,9 @@ document.addEventListener('keydown', function(event) {
         window.location.href = 'Homepage.html';
     }
 });
+
+function resetMoney() {
+    money = 500
+    localStorage.setItem("userMoney", money);
+
+}

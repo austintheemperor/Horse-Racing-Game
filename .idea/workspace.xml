@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aca4ff12-523c-4dd7-8c5d-5589fb30afb7" name="Changes" comment="adding back function to tourtorial" />
+    <list default="true" id="aca4ff12-523c-4dd7-8c5d-5589fb30afb7" name="Changes" comment="correctly indenting style.css">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webPages/Homepage.html" beforeDir="false" afterPath="$PROJECT_DIR$/webPages/Homepage.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -329,7 +332,23 @@
       <option name="project" value="LOCAL" />
       <updated>1778245393106</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="fixing button looks">
+      <option name="closed" value="true" />
+      <created>1778246038579</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1778246038579</updated>
+    </task>
+    <task id="LOCAL-00034" summary="correctly indenting style.css">
+      <option name="closed" value="true" />
+      <created>1778246154219</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1778246154219</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -344,8 +363,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Its in the game!" />
-    <MESSAGE value="Its not in the game anymore oh no sad" />
     <MESSAGE value="doing the multiple horse animations" />
     <MESSAGE value="doing the multiple horse animations fixing it" />
     <MESSAGE value="doing the mutilple horse fixed" />
@@ -369,6 +386,8 @@
     <MESSAGE value="fixing animation" />
     <MESSAGE value="fixing some things" />
     <MESSAGE value="adding back function to tourtorial" />
-    <option name="LAST_COMMIT_MESSAGE" value="adding back function to tourtorial" />
+    <MESSAGE value="fixing button looks" />
+    <MESSAGE value="correctly indenting style.css" />
+    <option name="LAST_COMMIT_MESSAGE" value="correctly indenting style.css" />
   </component>
 </project>
