@@ -146,5 +146,4 @@ document.addEventListener('keydown', function(event) {
 function resetMoney() {
     money = 500
     localStorage.setItem("userMoney", money);
-
 }
