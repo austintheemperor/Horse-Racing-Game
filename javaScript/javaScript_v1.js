@@ -140,10 +140,4 @@ document.addEventListener('keydown', function(event) {
     if (event.key === 'Escape') {
         // Redirect to your homepage URL
         window.location.href = 'Homepage.html';
-    }
-});
-
-function resetMoney() {
-    money = 500
-    localStorage.setItem("userMoney", money);
-}
+    }});

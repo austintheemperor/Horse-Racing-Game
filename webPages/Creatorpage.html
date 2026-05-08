@@ -16,6 +16,13 @@
   </ul>
 </div>
 <button onclick="window.location.href='Homepage.html'" class="homeButton3">Home</button>
-<script src="../javaScript/javaScript_v1.js" defer></script>
+<script>
+    document.addEventListener('keydown', function(event) {
+        // Check if the pressed key is 'Escape'
+        if (event.key === 'Escape') {
+            // Redirect to your homepage URL
+            window.location.href = 'Homepage.html';
+    }});
+</script>
 </body>
 </html>
