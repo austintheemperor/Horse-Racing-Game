@@ -84,17 +84,15 @@ label {
     border-radius: 10px;
 }
 #restartRace {
-  position: fixed;
-  top: 20px;
-  right: 20px;
-  z-index: 999;
-  padding: 10px 20px;
-  background-color: #ff0d0d;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-   display: none;
+position:fixed;
+top:20px;
+right:30px;
+background-color:#ff0d0d;
+border-radius:5px;
+width:100px;
+height:35px;
+color:white;
+border:none;
 }
 
 .tug {

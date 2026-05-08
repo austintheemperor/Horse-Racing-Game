@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aca4ff12-523c-4dd7-8c5d-5589fb30afb7" name="Changes" comment="fixing some things">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webPages/Tutorial.html" beforeDir="false" afterPath="$PROJECT_DIR$/webPages/Tutorial.html" afterDir="false" />
-    </list>
+    <list default="true" id="aca4ff12-523c-4dd7-8c5d-5589fb30afb7" name="Changes" comment="adding back function to tourtorial" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -324,7 +321,15 @@
       <option name="project" value="LOCAL" />
       <updated>1778159735135</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="adding back function to tourtorial">
+      <option name="closed" value="true" />
+      <created>1778245393106</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1778245393106</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -363,6 +368,7 @@
     <MESSAGE value="move files into folder" />
     <MESSAGE value="fixing animation" />
     <MESSAGE value="fixing some things" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixing some things" />
+    <MESSAGE value="adding back function to tourtorial" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding back function to tourtorial" />
   </component>
 </project>
