@@ -195,3 +195,12 @@ margin: 0;
     color:white;
     border:none;
 }
+.tutorialPage {
+    background-image: url('../images/Tutorial 2.0.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: black;
+    margin: 0;
+    height: 100vh;
+}
