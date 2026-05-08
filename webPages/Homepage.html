@@ -8,10 +8,16 @@
 <body id="homePage">
 
 <div class="button">
-<button class="dev-box"><a href="index.html" target="_blank">Play Game</a></button>
-<button class="dev-box"><a href="Tutorial.html" target="_blank">Tutorial</a></button>
+    <button class="dev-box"><a href="index.html" target="_blank">Play Game</a></button>
+    <button class="dev-box"><a href="Tutorial.html" target="_blank">Tutorial</a></button>
     <button class="dev-box"><a href="Creatorpage.html" target="_blank">Creators</a></button>
     <button class="dev-box" onclick="resetMoney()">Reset Money</button>
 </div>
+<script>
+    function resetMoney() {
+        localStorage.setItem("userMoney", 500);
+        alert("Money reset to $500!");
+    }
+</script>
 </body>
 </html>
