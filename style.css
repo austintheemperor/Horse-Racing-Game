@@ -204,3 +204,18 @@ margin: 0;
     margin: 0;
     height: 100vh;
 }
+.chart-box {
+  width: 300px;
+  height: 200px;
+
+  background: white;
+  border: 2px solid black;
+  border-radius: 10px;
+
+  padding: 10px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
