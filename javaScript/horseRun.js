@@ -5,6 +5,7 @@ let horseIntervals = [];
 let speedChart;
 let horseSpeeds = {};
 let horsePercents = {};
+let randomHorseSpeed = {};
 
 function generateOdds() {
 
@@ -70,6 +71,13 @@ function startRace() {
  horseIntervals.forEach(interval => clearInterval(interval));
   horseIntervals = [];
 
+randomHorseSpeed = {
+  red: horseSpeeds.red * (0.9 + Math.random() * 0.2),
+  blue: horseSpeeds.blue * (0.9 + Math.random() * 0.2),
+  green: horseSpeeds.green * (0.9 + Math.random() * 0.2),
+  pink: horseSpeeds.pink * (0.9 + Math.random() * 0.2),
+  purple: horseSpeeds.purple * (0.9 + Math.random() * 0.2)
+};
 
 
   horses.forEach(horse => {
@@ -77,8 +85,8 @@ function startRace() {
     let isRunning = false;
 
     const horseName = horse.getAttribute('alt');
-    let runSpeed = 700 / horseSpeeds[horseName];
-    let speed = horseSpeeds[horseName] || 4;
+let runSpeed = 700 / randomHorseSpeed[horseName];
+let speed = randomHorseSpeed[horseName] || 4;
 
   const interval = setInterval(() => {
       horse.src = isRunning
@@ -101,8 +109,5 @@ function startRace() {
     moveHorse();
   });
 }
-window.addEventListener("load", () => {
-  generateOdds();
-});
 
 

@@ -7,8 +7,7 @@
     <list default="true" id="aca4ff12-523c-4dd7-8c5d-5589fb30afb7" name="Changes" comment="finishing the tutorial thing">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/javaScript/horseRun.js" beforeDir="false" afterPath="$PROJECT_DIR$/javaScript/horseRun.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webPages/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/webPages/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javaScript/javaScript_v1.js" beforeDir="false" afterPath="$PROJECT_DIR$/javaScript/javaScript_v1.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -382,7 +381,15 @@
       <option name="project" value="LOCAL" />
       <updated>1778248093816</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="finishing the tutorial thing">
+      <option name="closed" value="true" />
+      <created>1778680159083</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1778680159083</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

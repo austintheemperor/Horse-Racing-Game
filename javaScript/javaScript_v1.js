@@ -75,21 +75,15 @@ function checkWinner() {
 function openMenu() {
     const winnerText = document.getElementById("winnerText");
 
-    if (winnerText) {
-        winnerText.style.display = "none";
-    }
-
-    if (finishBtn) {
-        finishBtn.style.display = "none";
-    }
-
-    if (homeButton) {
-    homeButton.style.display = "none";
-    }
+    if (winnerText) winnerText.style.display = "none";
+    if (finishBtn) finishBtn.style.display = "none";
+    if (homeButton) homeButton.style.display = "none";
 
     if (menu) {
         menu.classList.add("active");
     }
+
+    generateOdds(); //  THIS MAKES CHART UPDATE WHEN MENU OPENS HOPEFULLY PLS I BEG
 }
 
 function closeMenu() {
@@ -119,10 +113,14 @@ localStorage.setItem("userMoney", money);
 
     document.getElementById("money").innerText = "Money: $" + money;
 
-    raceOver = false;       // reset race state
+  raceOver = false;
+
+requestAnimationFrame(() => {
     closeMenu();
-    startRace();            // from horse.js
-    checkWinner();          // start checking AFTER race starts
+    startRace();
+    checkWinner();
+});
+
 }
 
 
